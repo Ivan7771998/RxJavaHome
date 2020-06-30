@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">RxJavaHome</string>
+    <string name="go_asynctask">GoAsyncTask</string>
+    <string name="btn_text_subscribe">Подписаться</string>
+    <string name="btn_text_unsubscribe">Отписаться</string>
+    <string name="btn_text_send_spam">Отправить Спам</string>
+    <string name="btn_text_task1">Задание №1</string>
+    <string name="btn_text_task2">Задание №2</string>
+    <string name="btn_text_task3">Задание №3</string>
 </resources>

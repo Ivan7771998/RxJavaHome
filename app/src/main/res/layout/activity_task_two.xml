@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".task2.TaskTwoActivity">
 
     <Button
         android:id="@+id/btnStartTask1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="280dp"
-        android:text="@string/btn_text_task1"
-        android:onClick="startTask1"
+        android:text="@string/btn_text_subscribe"
+        android:onClick="setSubscribe"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -20,8 +22,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:onClick="startTask2"
-        android:text="@string/btn_text_task2"
+        android:onClick="setUnSubscribe"
+        android:text="@string/btn_text_unsubscribe"
         app:layout_constraintEnd_toEndOf="@+id/btnStartTask1"
         app:layout_constraintStart_toStartOf="@+id/btnStartTask1"
         app:layout_constraintTop_toBottomOf="@+id/btnStartTask1" />
@@ -31,9 +33,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:onClick="startTask3"
+        android:onClick="sendSpam"
         android:layout_marginBottom="100dp"
-        android:text="@string/btn_text_task3"
+        android:text="@string/btn_text_send_spam"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/btnStartTask2"
         app:layout_constraintStart_toStartOf="@+id/btnStartTask2"
