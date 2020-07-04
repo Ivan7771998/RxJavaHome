@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".task3.TaskThreeActivity">
+
+
+    <Button
+        android:id="@+id/btnSubscribe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:onClick="setSubscribeRx"
+        android:text="@string/btn_text_subscribe"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnUnSubscribe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:onClick="setUnSubscribeRx"
+        android:text="@string/btn_text_unsubscribe"
+        app:layout_constraintEnd_toEndOf="@+id/btnSubscribe"
+        app:layout_constraintStart_toStartOf="@+id/btnSubscribe"
+        app:layout_constraintTop_toBottomOf="@+id/btnSubscribe" />
+</androidx.constraintlayout.widget.ConstraintLayout>
