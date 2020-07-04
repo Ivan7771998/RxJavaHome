@@ -12,20 +12,28 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="200dp"
-        android:onClick="setSubscribeRx"
-        android:text="@string/btn_text_subscribe"
+        android:text="@string/btn_text_subscribe_observable"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnSubscribeSingle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/btn_text_subscribe_single"
+        app:layout_constraintEnd_toEndOf="@+id/btnSubscribe"
+        app:layout_constraintStart_toStartOf="@+id/btnSubscribe"
+        app:layout_constraintTop_toBottomOf="@+id/btnSubscribe" />
 
     <Button
         android:id="@+id/btnUnSubscribe"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:onClick="setUnSubscribeRx"
         android:text="@string/btn_text_unsubscribe"
-        app:layout_constraintEnd_toEndOf="@+id/btnSubscribe"
-        app:layout_constraintStart_toStartOf="@+id/btnSubscribe"
-        app:layout_constraintTop_toBottomOf="@+id/btnSubscribe" />
+        app:layout_constraintEnd_toEndOf="@+id/btnSubscribeSingle"
+        app:layout_constraintStart_toStartOf="@+id/btnSubscribeSingle"
+        app:layout_constraintTop_toBottomOf="@+id/btnSubscribeSingle" />
 </androidx.constraintlayout.widget.ConstraintLayout>
